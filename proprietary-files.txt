@@ -45,6 +45,53 @@ vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
+# Audio ACDB
+-vendor/lib/libacdb-fts.so
+-vendor/lib/libacdbloader.so
+-vendor/lib/libacdbrtac.so
+-vendor/lib/libadiertac.so
+-vendor/lib/libaudcal.so
+
+# Audio ACDB - V12.5.2.0.RKFINXM-release-keys
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|1607f4018f676dae74fc24efa5fbd1ccb9093812
+vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb|91735baca19020f2136e5d4f8616db458da88ce9
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|e1d91d42aaa60f16896b672d24c5a0bf214cdb4c
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|b34ec442b87c1acb88dafd55fd86e77acbb003a3
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|8a3778a244c3f4c73f6b3f6fc638815898e630c3
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|288299cf2dbdc2b4891a08eb1c74f5e5b2d37bd5
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3affad5382970a6d932268322965bfae4a7b7a41
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|e98d5e4bbd2afe7fb18a206dd4f157a1a2fa2a8d
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846a6a51221811
+
+# Awinic firmware
+vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
+vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin
+vendor/firmware/awinic/aw882xx_pid_2032_acf.bin
+vendor/firmware/awinic/aw882xx_pid_2032_monitor.bin
+vendor/firmware/awinic/aw882xx_rcv_reg_l.bin
+vendor/firmware/awinic/aw882xx_rcv_reg_r.bin
+vendor/firmware/awinic/aw882xx_spk_reg_l.bin
+vendor/firmware/awinic/aw882xx_spk_reg_r.bin
+vendor/firmware/aw8624_haptic.bin
+vendor/firmware/aw8624_rtp.bin
+vendor/firmware/osc_rtp_24K_5s.bin
+
+# Audio HAL
+-vendor/lib/hw/audio.primary.sm6150.so
+-vendor/lib/vndk/libxlog.so
+-vendor/lib/libaudio_log_utils.so
+-vendor/lib/libaudioparsers.so
+-vendor/lib/libaudioroute_ext.so
+-vendor/lib/libqtigef.so
+
+# Audio extensions
+-vendor/lib/btaudio_offload_if.so
+-vendor/lib/liba2dpoffload.so
+-vendor/lib/libhdmiedid.so
+-vendor/lib/libhfp.so
+-vendor/lib/libsndmonitor.so
+-vendor/lib/libspkrprot.so
+
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
 -vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -62,9 +109,10 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
 -vendor/lib/soundfx/libmisoundfx.so
--vendor/lib/soundfx/libswvqe.so
--vendor/lib64/soundfx/libswvqe.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
+
+# Batterysecret
+-vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
 
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -85,6 +133,231 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib/libbluetooth_audio_session_qti.so
 -vendor/lib/libbluetooth_audio_session_qti_2_1.so
+
+# Camera
+-vendor/lib64/hw/camera.qcom.so
+-vendor/lib64/hw/com.qti.chi.override.so
+-vendor/lib64/libFaceGrade.so
+-vendor/lib64/libPSNPE.so
+-vendor/lib64/libSNPE.so
+-vendor/lib64/libVDClearShot.so
+-vendor/lib64/libXMFD_AgeGender.so
+-vendor/lib64/lib_sr_models.so
+-vendor/lib64/libalCFR.so
+-vendor/lib64/libalLDC.so
+-vendor/lib64/libalhLDC.so
+-vendor/lib64/libbeauty_face_interface.so
+-vendor/lib64/libc++_shared.so
+-vendor/lib64/libcamera_dirty.so
+-vendor/lib64/libcamera_nn_stub.so
+-vendor/lib64/libcamera_scene.so
+-vendor/lib64/libcamxfdalgov7.so
+-vendor/lib64/libcamxfdalgov8.so
+-vendor/lib64/libcamxfdengine.so
+-vendor/lib64/libcamxstatscore.so
+-vendor/lib64/libcamxswprocessalgo.so
+-vendor/lib64/libcamxtintlessalgo.so
+-vendor/lib64/libcapiv2svacnn.so
+-vendor/lib64/libcapiv2vop.so
+-vendor/lib64/libcom.qti.chinodeutils.so
+-vendor/lib64/libdualcam_optical_zoom_control.so
+-vendor/lib64/libdualcam_video_optical_zoom.so
+-vendor/lib64/libft2vendor.so
+-vendor/lib64/libhta.so
+-vendor/lib64/libhvx_interface.so
+-vendor/lib64/libmiai_portraitsupernight.so
+-vendor/lib64/libmialgo_fs.so
+-vendor/lib64/libmialgo_ie_capture.so
+-vendor/lib64/libmialgo_rfs.so
+-vendor/lib64/libmialgo_sd.so
+-vendor/lib64/libmialgo_utils.so
+-vendor/lib64/libmialgoengine.so
+-vendor/lib64/libmibokeh_712.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase.so_xiaomi
+-vendor/lib64/libmulticam_image_optical_zoom.so
+-vendor/lib64/libmulticam_video_optical_zoom.so
+-vendor/lib64/librelight_only.so
+-vendor/lib64/libremosaic_wrapper.so
+-vendor/lib64/libremosaiclib.so
+-vendor/lib64/libsdk_sr.so
+-vendor/lib64/libsnpe_adsp.so
+-vendor/lib64/libsnpe_dsp_domains.so
+-vendor/lib64/libsnpe_dsp_domains_system.so
+-vendor/lib64/libsnpe_dsp_domains_v2.so
+-vendor/lib64/libsnpe_dsp_domains_v2_system.so
+-vendor/lib64/libsns_device_mode_stub.so
+-vendor/lib64/libsns_fastRPC_util.so
+-vendor/lib64/libsns_low_lat_stream_stub.so
+-vendor/lib64/libsnsapi.so
+-vendor/lib64/libsnsdiaglog.so
+-vendor/lib64/libswregistrationalgo.so
+-vendor/lib64/libswvdec.so
+-vendor/lib64/libsymphony-cpu.so
+-vendor/lib64/libtriplecam_video_optical_zoom.so
+-vendor/lib64/libvideofilter_only.so
+-vendor/lib64/libvidhance.so
+-vendor/lib64/libxmi_hdr_checker.so
+-vendor/lib64/libxmi_high_dynamic_range.so
+-vendor/lib64/libxml2_vendor.so
+vendor/lib64/mibokeh_712_opencl.bin
+
+# Camera-arcsoft
+-vendor/lib64/libarcsoft_beautyshot.so
+-vendor/lib64/libarcsoft_distortion_correction.so
+-vendor/lib64/libarcsoft_dualcam_refocus.so
+-vendor/lib64/libarcsoft_dualcam_refocus_front.so
+-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
+-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
+-vendor/lib64/libarcsoft_hta.so
+-vendor/lib64/libarcsoft_portrait_lighting.so
+-vendor/lib64/libarcsoft_portrait_lighting_c.so
+-vendor/lib64/libarcsoft_preview_deflicker.so
+-vendor/lib64/libarcsoft_super_night_raw.so|a725136e8fe0c9ffd6b5ed527fd480478c9fd57d
+
+# Camera-components
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
+-vendor/lib64/camera/components/com.altek.node.depurple.so
+-vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
+-vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
+-vendor/lib64/camera/components/com.arcsoft.node.deflicker.so
+-vendor/lib64/camera/components/com.arcsoft.node.distortioncorrection.so
+-vendor/lib64/camera/components/com.arcsoft.node.hdr.so
+-vendor/lib64/camera/components/com.arcsoft.node.hdrchecker.so
+-vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
+-vendor/lib64/camera/components/com.arcsoft.node.skinbeautifier.so
+-vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so
+-vendor/lib64/camera/components/com.arcsoft.node.superlowlightraw.so
+-vendor/lib64/camera/components/com.mi.node.aiasd.so
+-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
+-vendor/lib64/camera/components/com.qti.eisv2.so
+-vendor/lib64/camera/components/com.qti.eisv3.so
+-vendor/lib64/camera/components/com.qti.hvx.addconstant.so
+-vendor/lib64/camera/components/com.qti.hvx.binning.so
+-vendor/lib64/camera/components/com.qti.node.depth.so
+-vendor/lib64/camera/components/com.qti.node.dummyrtb.so
+-vendor/lib64/camera/components/com.qti.node.dummysat.so
+-vendor/lib64/camera/components/com.qti.node.eisv2.so
+-vendor/lib64/camera/components/com.qti.node.eisv3.so
+-vendor/lib64/camera/components/com.qti.node.fcv.so
+-vendor/lib64/camera/components/com.qti.node.gpu.so
+-vendor/lib64/camera/components/com.qti.node.memcpy.so
+-vendor/lib64/camera/components/com.qti.node.remosaic.so
+-vendor/lib64/camera/components/com.qti.node.stich.so
+-vendor/lib64/camera/components/com.qti.node.swregistration.so
+-vendor/lib64/camera/components/com.qti.node.watermark.so
+-vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so
+-vendor/lib64/camera/components/com.qti.stats.aec.so
+-vendor/lib64/camera/components/com.qti.stats.af.so
+-vendor/lib64/camera/components/com.qti.stats.afd.so
+-vendor/lib64/camera/components/com.qti.stats.asd.so
+-vendor/lib64/camera/components/com.qti.stats.awb.so
+-vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
+-vendor/lib64/camera/components/com.qti.stats.haf.so
+-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+-vendor/lib64/camera/components/com.qti.stats.localhistogram.so
+-vendor/lib64/camera/components/com.qti.stats.pdlib.so
+-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
+-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
+-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
+-vendor/lib64/camera/components/com.qtistatic.stats.af.so
+-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
+-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
+-vendor/lib64/camera/components/com.vidhance.node.eis.so
+-vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
+-vendor/lib64/camera/components/com.visidon.node.clearshot.so
+-vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so
+-vendor/lib64/camera/components/com.xiaomi.node.mifilter.so
+-vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
+-vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
+-vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+-vendor/lib64/camera/components/libdepthmapwrapper.so
+-vendor/lib64/camera/components/libmmcamera_cac3.so
+
+# Camera-configs
+vendor/etc/camera/CFR_para_MARCO_V01.bin
+vendor/etc/camera/CFR_para_UW_V01.bin
+vendor/etc/camera/CFR_para_W_V01.bin
+vendor/etc/camera/CFR_para_config.xml
+vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
+vendor/etc/camera/Miui-Light.ttf
+vendor/etc/camera/almalence_sr_params_tele.config
+vendor/etc/camera/almalence_sr_params_wide.config
+vendor/etc/camera/back_dual_camera_caldata_wt.bin
+vendor/etc/camera/beauty_ui9_intelligent_params.config
+vendor/etc/camera/camxoverridesettings.txt
+vendor/etc/camera/com.xiaomi.dcal.wd.golden.108m
+vendor/etc/camera/com.xiaomi.dcal.wd.golden.64m
+vendor/etc/camera/com.xiaomi.dcal.wu.fake
+vendor/etc/camera/com.xiaomi.dcal.wu.golden.108m
+vendor/etc/camera/com.xiaomi.dcal.wu.golden.64m
+vendor/etc/camera/eisoverridesettings.txt
+vendor/etc/camera/eyelineblush.cng
+vendor/etc/camera/golden_rear_dc_cal_wu.bin
+vendor/etc/camera/hdr_ui9_params.config
+vendor/etc/camera/lf_facerank_model.bin
+vendor/etc/camera/mibokeh_712_opencl.bin
+vendor/etc/camera/mibokeh_712_parameter.bin
+vendor/etc/camera/sceneDetection.xml
+vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
+vendor/etc/camera/sr_params.xml
+vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/vidhance_calibration_108m
+vendor/etc/camera/vidhance_calibration_64m
+vendor/etc/camera/watermark_font_2300_3199.dat
+
+# Camera face detection
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+-vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+-vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
+
+# Camera-firmware
+vendor/firmware/CAMERA_ICP.elf
+
+# Camera-sensors
+-vendor/lib64/camera/com.qti.sensor.sweet_gc02m1.so
+-vendor/lib64/camera/com.qti.sensor.sweet_imx355.so
+-vendor/lib64/camera/com.qti.sensor.sweet_imx471_front.so
+-vendor/lib64/camera/com.qti.sensor.sweet_ov02b1b.so
+-vendor/lib64/camera/com.qti.sensor.sweet_ov5675_macro.so
+-vendor/lib64/camera/com.qti.sensor.sweet_s5kgw3.so
+-vendor/lib64/camera/com.qti.sensor.sweet_s5khm2.so
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx471_front.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov02b1b.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov5675_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5kgw3.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5khm2.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_gc02m1.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_imx355_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_imx471_front.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_ov5675_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_s5kgw3.bin
+vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_s5khm2.bin
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_imx471_front.bin
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_ov02b1b_depth.bin
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_ov5675_macro.bin
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5khm2_wide.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_gc02m1_depth.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx355_ultra.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx471_front.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_ov5675_macro.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5khm2_wide.bin
+vendor/lib64/camera/fdconfigpreview.bin
+vendor/lib64/camera/fdconfigpreviewlite.bin
+vendor/lib64/camera/fdconfigvideo.bin
+vendor/lib64/camera/fdconfigvideolite.bin
+
+# Camera-sensors - V13.0.10.0.SKFINXM-release-keys
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|1d8c75a2f59b695165fc526512094ae285addce7
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|bf85d01ff12d6431c0a674f4b9d05bb529a4df15
 
 # Charger
 -vendor/bin/hvdcp_opti
@@ -237,6 +510,9 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 -vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 -vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE=vendor.qti.hardware.fm@1.0_vendor
 
+# Fingerprint
+-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
+
 # Graphics (Adreno) - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
 vendor/gpu/kbc/unified_kbcs_32.bin|503228f87adc71131aa8134659b00dffe073e973
@@ -278,10 +554,20 @@ vendor/gpu/kbc/unified_ksqs.bin|8f77dc004796d58acb959e78f4994c5d6b90baef
 -vendor/lib64/libllvm-glnext.so|8b56a8e6068618db2642f0742b92d0b21bd9ef8d
 -vendor/lib64/libllvm-qcom.so|ab38c1cf4fd025c19aadee386e170d407f454f56
 
+# Graphics firmware
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_sqe.fw
+
 # Gatekeeper
 -vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+
 
 # GPS
 -vendor/bin/loc_launcher
@@ -315,11 +601,6 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/lib64/vendor.qti.gnss@4.0.so
 -vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|47cd4ed29ce7a556dcdf9b1be6675ddbbb7fca63
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|3d8943911ae38e0604f46f34c1a295371b483af4
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # Radio (diag) - from LA.UM.9.1.r1-12900-SMxxx0.0
 system_ext/lib64/libdiag_system.so|22fb08478936c1520d71880c42650501344b8f27
@@ -396,9 +677,22 @@ vendor/etc/seccomp_policy/imsrtp.policy
 
 # IPA
 vendor/etc/init/ipa_fws.rc
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 
 # IRQ balance
 -vendor/bin/msm_irqbalance
+
+# IR
+-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+
+# NFC
+-vendor/lib/libpn553_fw.so
 
 # Keymaster
 -vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -604,6 +898,66 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 
+# Sensors
+-vendor/bin/sensors.qti
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
+-vendor/lib64/libsensorslog.so
+-vendor/lib64/libsns_fastRPC_util.so
+-vendor/lib64/libsns_low_lat_stream_stub.so
+-vendor/lib64/libsnsapi.so
+-vendor/lib64/libsnsdiaglog.so
+-vendor/lib64/libssc.so
+-vendor/lib64/libssccalapi.so
+-vendor/lib64/sensors.ssc.so
+-vendor/lib64/sensors.touch.so
+
+# Sensors config
+vendor/etc/sensors/config/adux1050_0.json
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/bu27030_0.json
+vendor/etc/sensors/config/icm4x6xx_0.json
+vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/sm7150_adux1050_0.json
+vendor/etc/sensors/config/sm7150_ak991x_0.json
+vendor/etc/sensors/config/sm7150_bu27030_0.json
+vendor/etc/sensors/config/sm7150_icm4x6xx_0.json
+vendor/etc/sensors/config/sm7150_lsm6dso_0.json
+vendor/etc/sensors/config/sm7150_power_0.json
+vendor/etc/sensors/config/sm7150_tsl2540.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
+vendor/etc/sensors/config/sns_aod.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_nonui.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_sar_algo_0.json
+vendor/etc/sensors/config/sns_sar_algo_1.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/tsl2540.json
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/judge_calibrated.json
+vendor/etc/sensors/sns_reg_config
+
 # Snapdragon Computer Vision Engine
 -vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
@@ -638,47 +992,149 @@ vendor/app/TimeService/TimeService.apk
 vendor/etc/init/init.time_daemon.rc
 -vendor/lib64/libtime_genoff.so
 
-# Dolby - from 9R OOS 11.2.8.8
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
-vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
-vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
-vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c
-vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
-vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
-vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
-vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
-vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
-vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
-vendor/lib64/libdapparamstorage.so|b820de455f13bce531331f9e134b1e56b8a651d4
-vendor/lib64/libdeccfg.so|adea652793ab688253b0b56d6c165625184eab54
-vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0
-vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad
-vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92
-vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b
-vendor/lib64/soundfx/libeffectproxy.so|e09115bb4087510eab62d21ab050274d6c98db71
-vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
-vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
-vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
+# Sensors Ultrasound
+vendor/etc/elliptic_sensor.xml
+-vendor/lib64/libnotifyaudiohal.so
+-vendor/lib64/libultrasound.so
+-vendor/lib64/sensors.elliptic.so
+-vendor/lib64/sensors.mius.proximity.so
 
-# OzoProcessing - from MIUI Alioth 13.0.7.0 EU
-system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so|a2733c6b45e4833dc819d577b047e10cb4f87f52
-system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so|1b05a9df7c21fc3f7612c921adeee6baaed3e181
-system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so|f7a9df3949ab575448b8140dde70ae2acb397607
-system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so|49c7d0dcf08ebacd84ee65644b7eaea6d566785a
-system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so|3eeff7c0847ff303159c736f5adf0fd67c9c91a9
-system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so|52ebb386661aff58ac403c2d546528538fc095c9
-system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so|de9a8a0d841620deaa8ddc26d82eca683f06af29
-system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so|b13304b91911c7bc2f6c0e4c6e09b0a8b4dc94bf
-system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so|957d749a4b1c1874124d2fbdf4981e927922bc9e
-system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so|3a7a7252641cc39da386d66d83b802509ab9570d
+# Thermal
+-vendor/bin/mi_thermald
+-vendor/bin/thermal-engine
+vendor/etc/init/init.mi_thermald.rc
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-youtube.conf
+vendor/etc/thermald-devices.conf
+-vendor/lib64/libthermalclient.so
+
+# Vibrator
+vendor/firmware/AcousticGuitar_RTP.bin
+vendor/firmware/Atlantis_RTP.bin
+vendor/firmware/Bottle_RTP.bin
+vendor/firmware/Bubble_RTP.bin
+vendor/firmware/Bullfrog_RTP.bin
+vendor/firmware/Burst_RTP.bin
+vendor/firmware/Candy_RTP.bin
+vendor/firmware/Carousel_RTP.bin
+vendor/firmware/Celesta_RTP.bin
+vendor/firmware/Charge_Wire_RTP.bin
+vendor/firmware/Charge_Wireless_RTP.bin
+vendor/firmware/Childhood_RTP.bin
+vendor/firmware/Chirp_RTP.bin
+vendor/firmware/Clank_RTP.bin
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/Country_RTP.bin
+vendor/firmware/Cowboy_RTP.bin
+vendor/firmware/Crystal_RTP.bin
+vendor/firmware/DigitalUniverse_RTP.bin
+vendor/firmware/FOD_Motion1_RTP.bin
+vendor/firmware/FOD_Motion2_RTP.bin
+vendor/firmware/FOD_Motion3_RTP.bin
+vendor/firmware/FOD_Motion4_RTP.bin
+vendor/firmware/FOD_Motion_Aurora_RTP.bin
+vendor/firmware/FOD_Motion_Planet_RTP.bin
+vendor/firmware/FaceID_Wrong1_RTP.bin
+vendor/firmware/FaceID_Wrong2_RTP.bin
+vendor/firmware/FadeIn_RTP.bin
+vendor/firmware/FadeOut_RTP.bin
+vendor/firmware/Fairyland_RTP.bin
+vendor/firmware/Fantasy_RTP.bin
+vendor/firmware/Field_Trip_RTP.bin
+vendor/firmware/Flute_RTP.bin
+vendor/firmware/Fresh_RTP.bin
+vendor/firmware/Frog_RTP.bin
+vendor/firmware/Gesture_UpHold_RTP.bin
+vendor/firmware/Gesture_UpSlide_RTP.bin
+vendor/firmware/Glee_RTP.bin
+vendor/firmware/Guitar_RTP.bin
+vendor/firmware/Harp_RTP.bin
+vendor/firmware/Ice_Latte_RTP.bin
+vendor/firmware/IncomingMessage_RTP.bin
+vendor/firmware/Kung_Fu_RTP.bin
+vendor/firmware/Lollipop_RTP.bin
+vendor/firmware/MIX_RTP.bin
+vendor/firmware/MessageSent_RTP.bin
+vendor/firmware/MiClassicRemix_RTP.bin
+vendor/firmware/MiHouse_RTP.bin
+vendor/firmware/MiJazz_RTP.bin
+vendor/firmware/MiMix2_RTP.bin
+vendor/firmware/MiRemix_RTP.bin
+vendor/firmware/Mi_RTP.bin
+vendor/firmware/Moment_RTP.bin
+vendor/firmware/Mountain_Spring_RTP.bin
+vendor/firmware/NFC_card_rtp.bin
+vendor/firmware/NFC_card_slow_rtp.bin
+vendor/firmware/NotificationXylophone_RTP.bin
+vendor/firmware/Orange_RTP.bin
+vendor/firmware/Potion_RTP.bin
+vendor/firmware/Radar_RTP.bin
+vendor/firmware/Reveries_RTP.bin
+vendor/firmware/Space_Age_RTP.bin
+vendor/firmware/Spring_RTP.bin
+vendor/firmware/Swoosh_RTP.bin
+vendor/firmware/ToyRobot_RTP.bin
+vendor/firmware/Unlock_Failed_RTP.bin
+vendor/firmware/bandage_RTP.bin
+vendor/firmware/crawl_RTP.bin
+vendor/firmware/door_open_RTP.bin
+vendor/firmware/drv2604.bin
+vendor/firmware/firearms_akm_RTP.bin
+vendor/firmware/firearms_awm_RTP.bin
+vendor/firmware/firearms_dp28_RTP.bin
+vendor/firmware/firearms_m16a4_RTP.bin
+vendor/firmware/firearms_mini14_RTP.bin
+vendor/firmware/firearms_p18c_RTP.bin
+vendor/firmware/firearms_qbz_RTP.bin
+vendor/firmware/firearms_s1897_RTP.bin
+vendor/firmware/firearms_ump9_RTP.bin
+vendor/firmware/firearms_vss_RTP.bin
+vendor/firmware/grenade_RTP.bin
+vendor/firmware/grenade_explosion_RTP.bin
+vendor/firmware/launcher_edit_rtp.bin
+vendor/firmware/launcher_icon_selection_rtp.bin
+vendor/firmware/lockscreen_camera_entry_rtp.bin
+vendor/firmware/magazine_quick_RTP.bin
+vendor/firmware/new_iconfolder_rtp.bin
+vendor/firmware/notification_cleanall_rtp.bin
+vendor/firmware/notification_remove_rtp.bin
+vendor/firmware/notification_setting_close_rtp.bin
+vendor/firmware/offline_countdown_RTP.bin
+vendor/firmware/osc_rtp_24K_5s.bin
+vendor/firmware/pan_RTP.bin
+vendor/firmware/punch_RTP.bin
+vendor/firmware/scene_bomb_RTP.bin
+vendor/firmware/scene_bomb_injury_RTP.bin
+vendor/firmware/scene_closeparachute_RTP.bin
+vendor/firmware/scene_getshot_RTP.bin
+vendor/firmware/scene_jump_RTP.bin
+vendor/firmware/scene_openparachute_RTP.bin
+vendor/firmware/scene_step_RTP.bin
+vendor/firmware/scope_off_RTP.bin
+vendor/firmware/scope_on_RTP.bin
+vendor/firmware/screenshot_rtp.bin
+vendor/firmware/task_cleanall_rtp.bin
+vendor/firmware/uninstall_animation_rtp.bin
+vendor/firmware/uninstall_dialog_rtp.bin
+vendor/firmware/vehicle_buggy_RTP.bin
+vendor/firmware/vehicle_collision_RTP.bin
+vendor/firmware/vehicle_dacia_RTP.bin
+vendor/firmware/vehicle_moto_RTP.bin
+vendor/firmware/vehicle_plane_RTP.bin
+
+# WLAN
+-vendor/bin/cnss-daemon
 
 # Xiaomi MAC
 -vendor/bin/nv_mac
