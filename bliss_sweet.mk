@@ -11,14 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit common Voltage OS  Stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 2160
-PRODUCT_NAME := voltage_sweet
+# Inherit common Bliss ROM  Stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_NAME := bliss_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-VOLTAGE_BUILD_TYPE := OFFICIAL
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# BlissOS Stuff
+BLISS_BUILDTYPE := UNOFFICIAL
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
