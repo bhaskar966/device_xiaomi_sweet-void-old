@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_sweet.mk
+    $(LOCAL_DIR)/aosp_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_sweet-user \
-    bliss_sweet-userdebug \
-    bliss_sweet-eng
+    aosp_sweet-user \
+    aosp_sweet-userdebug \
+    aosp_sweet-eng
