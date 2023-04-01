@@ -9,6 +9,9 @@ git clone https://github.com/ArrowOS/android_hardware_qcom_audio -b arrow-13.0-c
 git clone https://github.com/ArrowOS/android_hardware_qcom_media -b arrow-13.0-caf-sm8150 hardware/qcom-caf/sm8150/media 
 git clone https://github.com/ArrowOS/android_hardware_qcom_display -b arrow-13.0-caf-sm8150 hardware/qcom-caf/sm8150/display
 
+# MIUI Camera
+git clone https://gitlab.com/mrfox2003/sweet-miuicamera.git -b topaz vendor/xiaomi/sweet-miuicamera
+
 # Vendor
 git clone https://github.com/bhaskar966/vendor_xiaomi_sweet.git -b 13.0 vendor/xiaomi/sweet
 
@@ -16,6 +19,5 @@ git clone https://github.com/bhaskar966/vendor_xiaomi_sweet.git -b 13.0 vendor/x
 git clone https://github.com/PixelExperience/packages_resources_devicesettings packages/resources/devicesettings
 
 # Kernel
-
 git clone -b 17 --depth=1 https://gitlab.com/PixelOS-Devices/playgroundtc.git prebuilts/clang/host/linux-x86/clang-playground
 git clone -b courbet-13 --depth=1 https://github.com/vantoman/kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
