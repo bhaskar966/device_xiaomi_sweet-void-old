@@ -51,7 +51,7 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := sweeet,sweetin
+TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
 # Broken Build Rules
 BUILD_BROKEN_DUP_RULES := true
@@ -70,6 +70,9 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
+
+# Compression
+PRODUCT_FS_COMPRESSION := 1
 
 # Display
 TARGET_USES_COLOR_METADATA := true
@@ -91,9 +94,6 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
-# Compression
-PRODUCT_FS_COMPRESSION := 1
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
@@ -107,12 +107,12 @@ ODM_MANIFEST_SKUS += sweet
 ODM_MANIFEST_SWEET_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -232,7 +232,6 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
